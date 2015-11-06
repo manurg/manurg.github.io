@@ -1,0 +1,32 @@
+{
+  "name": "manurg.github.io",
+  "version": "0.0.1",
+  "homepage": "http://dermanu.de",
+  "authors": [
+    "manuel.r.85@gmail.com"
+  ],
+  "description": "Personal portfolio website of manuel rodriguez",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "manuel",
+    "rodriguez",
+    "frontend",
+    "freelance",
+    "engineer",
+    "hamburg",
+    "germany"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

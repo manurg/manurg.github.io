@@ -1,0 +1,32 @@
+{
+  "name": "manurg.github.io",
+  "version": "0.0.1",
+  "description": "Personal portfolio website of manuel rodriguez",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manurg/manurg.github.io.git"
+  },
+  "keywords": [
+    "manuel",
+    "rodriguez",
+    "frontend",
+    "engineer",
+    "freelance",
+    "hamburg",
+    "germany"
+  ],
+  "author": "Manuel Rodriguez <manuel.rodriguez@bookandsmile.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manurg/manurg.github.io/issues"
+  },
+  "homepage": "https://github.com/manurg/manurg.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.4.2"
+  }
+}
