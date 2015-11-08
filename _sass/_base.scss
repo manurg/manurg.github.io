@@ -9,12 +9,6 @@ body {
   font-size: 100%;
 }
 
-main {
-  padding: 1em;
-  max-width: 980px;
-  margin: auto;
-}
-
 h1, h2 {
   margin: 0.5em 0;
 }
@@ -75,6 +69,17 @@ ul {
 
 .home {
   text-align: center;
+}
+
+.introduction {
+  overflow: hidden;
+  position: relative;
+}
+
+#stage {
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 footer {
