@@ -1,6 +1,6 @@
 .projects {
-  background: #fcfcfc;
-  color: #262121;
+  background: $white;
+  color: $black;
   margin: auto;
   max-width: 980px;
   padding: 2em;
@@ -13,7 +13,7 @@
   .project {
 
     & + .project {
-      border-top: 1px solid #eeeeee;
+      border-top: 1px solid $lightGrey;
       margin-top: 2em;
       padding-top: 2em;
     }
@@ -28,9 +28,9 @@
 
     p {
       code {
-        background: #eeeeee;
+        background: $lightGrey;
         border-radius: 2px;
-        border: 1px solid #dddddd;
+        border: 1px solid $mediumGrey;
         padding: 0.2em;
       }
     }
@@ -51,8 +51,8 @@
 
     .taglist {
       li {
-        background: #262121;
-        color: #fcfcfc;
+        background: $black;
+        color: $white;
       }
     }
 
@@ -74,10 +74,6 @@
       .description {
         width: 100%;
         padding-left: 0;
-      }
-
-      .tags li {
-        background: #777777;
       }
     }
   }
