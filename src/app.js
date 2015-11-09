@@ -45,7 +45,7 @@ $(function () {
   }
 
   function animloop(){
-    //requestAnimFrame(animloop);
+    requestAnimFrame(animloop);
     render();
   }
 
