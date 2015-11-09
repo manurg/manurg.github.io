@@ -1,2 +1,4 @@
 highlighter: pygments
 exclude: ['src/', 'node_modules']
+gems:
+  - octopress-autoprefixer
