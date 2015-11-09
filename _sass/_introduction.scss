@@ -1,0 +1,47 @@
+.introduction {
+  background: radial-gradient(#383749, #262121);
+  overflow: hidden;
+  position: relative;
+
+  header {
+
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    hgroup {
+      display: inline-block;
+      margin: 3em 0;
+      vertical-align: middle;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      border: 4px solid white;
+      display: inline-block;
+      margin-right: 24px;
+      vertical-align: middle;
+      width: 80px;
+    }
+  }
+
+  .icon-more {
+    bottom: 24px;
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+#stage {
+  left: 0;
+  position: absolute;
+  top: 0;
+}

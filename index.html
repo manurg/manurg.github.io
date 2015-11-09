@@ -2,17 +2,20 @@
 layout: static
 title: Manuel Rodriguez - Frontend Engineer
 ---
-{% include header.html %}
 <div class="home">
   <section class="introduction">
-    <!--
-    <p>Hi, my name is Manuel and I live in Hamburg, Germany.
-      <br>I'm a freelance frontend engineer who is passionate about creating great web user experiences.
-    </p>
-    -->
     <canvas id="stage" width="0" height="0"></canvas>
+    <header>
+      <img src="/assets/img/avatar.png" alt="Manuel Rodriguez" class="avatar"/>
+      <hgroup>
+        <h1>Manuel Rodriguez</h1>
+        <h2>Frontend Engineer / Freelancer</h2>
+      </hgroup>
+    </header>
+    <i class="icon-more"></i>
   </section>
-  <!--
+
+<!--
   <section class="skills">
     <h2>skill buzzwords</h2>
     <h3>I always try to write clean, elegant and efficient code.</h3>
@@ -37,11 +40,145 @@ title: Manuel Rodriguez - Frontend Engineer
       <li>clean code</li>
     </ul>
   </section>
-  -->
+-->
+  <section class="projects">
+    <h1>Arbeiten</h1>
 
-  <section>
+    <section class="project cf">
+      <img src="projects/billigflieger.png" alt="billigflieger.de" title="billigflieger.de"/>
+      <div class="description">
+        <h1>billigflieger.de</h1>
+        <h2>Metasuchmaschine für Flüge</h2>
+        <p>
+          Im Auftrag der bookandsmile GmbH durfte ich Teil des kompletten Umbaus von billigflieger.de sein.
+          Die Seite hat sich einem kompletten technischen Relaunch unterzogen, wobei Backend und Frontend neu entwickelt wurden.
+        </p>
+        <h2>Meine Aufgabe:</h2>
+        <p>
+          Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop und Mobile.
+        </p>
+        <code>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>stylus</li>
+            <li>node.js</li>
+            <li>express</li>
+            <li>ejs</li>
+            <li>agularjs</li>
+            <li>scrum</li>
+          </ul>
+        </code>
+      </div>
+    </section>
 
+    <section class="project cf">
+      <img src="projects/dolomiten.png" alt="Das Rätsel der Dolomiten" title="Das Rätsel der Dolomiten"/>
+      <div class="description">
+        <h1>Das Rätsel der Dolomiten</h1>
+        <p>
+          In mehreren Spieletappen können die Besucher die Urlaubswelt der Dolomiten anhand großer Bilder und emotionaler
+          Videos interaktiv entdecken. Über eine angepasste Google Maps Karte wird der Besucher durch die virtuelle Wandertour geführt,
+          muss Fragen beantworten und kann sich zum Ende der letzten Etappe in das Gipfelbuch eintragen und an einem Gewinnspiel teilnehmen.
+        </p>
+        <h2>Meine Aufgabe:</h2>
+        <p>
+          Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop.
+          <br>Entwicklung der interaktiven Hauptnavigation mit Canvas + Flash-Polyfill.
+        </p>
+        <code>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>javascript</li>
+            <li>canvas</li>
+            <li>svg</li>
+          </ul>
+        </code>
+      </div>
+    </section>
 
+    <section class="project cf">
+      <img src="projects/skoda25.png" alt="ŠKODA - Die Mauer-weg-Wochen - Webspecial" title="ŠKODA - Die Mauer-weg-Wochen - Webspecial"/>
+      <div class="description">
+        <h1>ŠKODA - Webspecial</h1>
+        <h2>Die Mauer-weg-Wochen</h2>
+        <p>
+          Auf skoda25.de konnten User durch Mauerstücke navigieren und Highlights der Jahre 1989 - 2014 erfahren.
+          Jedes Mauerstück enthielt noch zusätzliche Infos, die nach einem Klick und einer Kamerafahrt in den “Himmel” ersichtlich waren.
+        </p>
+        <h2>Meine Aufgabe:</h2>
+        <p>
+          Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop und Tablet.
+          Entwicklung eines ruckelfreien Parallax-Effektes beim Navigieren durch die Mauerstücke / in den Himmel,
+          welcher auch auf einem iPad flüssig läuft.
+        </p>
+        <code>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>sass</li>
+            <li>compass</li>
+            <li>javascript</li>
+            <li>grunt</li>
+          </ul>
+        </code>
+      </div>
+    </section>
+
+    <section class="project cf">
+      <img src="projects/67rockwell.png" alt="67rockwell - Firmenpräsenz" title="67rockwell - Firmenpräsenz"/>
+      <div class="description">
+        <h1>67rockwell - Firmenpräsenz</h1>
+        <h2>Meine Aufgabe:</h2>
+        <p>
+          Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop. Erstellung von durchs Backend pflegbare, modulare Teaser,
+          die in verschiedenen Größen / Layouts / Farben einsetzbar sind:
+          <br><code>&lt;article class="teaser teaser-2x2c red4"&gt;</code>
+        </p>
+        <p>
+          Entwicklung eines Sortier- / Anordnungsalgorithmus bei Klick auf Teaser, um die durch den Content verdrängten Teaser umliegend zu verteilen.
+        </p>
+        <p>
+          Entwicklung eines cross-browser Blur-Effekts.
+        </p>
+        <code>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>compass</li>
+            <li>sass</li>
+            <li>javascript</li>
+          </ul>
+        </code>
+      </div>
+    </section>
+
+    <section class="project cf">
+      <img src="projects/xmas.png" alt="Salon91 - Weihnachtsspecial" title="Salon91 - Weihnachtsspecial"/>
+      <div class="description">
+        <h1>Salon91 - Weihnachtsspecial</h1>
+        <p>
+          Vor Weihnachten lud Salon91 zum virtuellen Vorflöten ein. Dazu benötigte man zusätzlich noch ein Smartphone und eine iOS App,
+          um sich mit der Website zu verbinden. Sobald die Verbindung hergestellt war, konnte man durch Pusten in das Mikrofon des
+          Handys die Töne des ausgewählten Weihnachtsliedes ertönen lassen.
+        </p>
+        <h2>Meine Aufgabe:</h2>
+        <p>
+          Entwicklung der iOS App (hybrid) mit Ionic (AngularJS + Apache Cordova).
+        </p>
+        <code>
+          <ul class="tags">
+            <li>html5</li>
+            <li>css3</li>
+            <li>javascript</li>
+            <li>ionic</li>
+            <li>apache cordova</li>
+            <li>angularjs</li>
+            <li>firebase</li>
+          </ul>
+        </code>
+      </div>
+    </section>
   </section>
-
 </div>

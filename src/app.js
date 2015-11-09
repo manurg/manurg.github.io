@@ -21,13 +21,11 @@ $(function () {
       $main = $('main'),
       $introduction = $main.find('.introduction'),
       $canvas = $main.find('#stage'),
-      $footer = $('footer'),
 
       canvas = document.getElementById('stage'),
       ctx,
       stageWidth,
       stageHeight,
-      footerHeight,
       particles = [];
 
   init();
@@ -67,12 +65,11 @@ $(function () {
   function resize () {
     stageWidth = $window.width();
     stageHeight = $window.height();
-    footerHeight = $footer.outerHeight();
 
-    $canvas.attr('width', stageWidth).attr('height', stageHeight - footerHeight);
+    $canvas.attr('width', stageWidth).attr('height', stageHeight);
 
     $introduction.width(stageWidth);
-    $introduction.height(stageHeight - footerHeight);
+    $introduction.height(stageHeight);
   }
 
   function render () {
