@@ -27,7 +27,7 @@
     "tests"
   ],
   "dependencies": {
-§    "jquery": "~2.1.4",
+    "jquery": "~2.1.4",
     "css-spaces": "~0.3.4"
   }
 }
