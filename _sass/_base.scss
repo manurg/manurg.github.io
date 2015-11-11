@@ -65,7 +65,7 @@ ul {
 
   &:hover {
     cursor: pointer;
-    color: $link;
+    color: $black;
 
     &:after {
       left: -15%;
@@ -76,7 +76,6 @@ ul {
 }
 
 footer {
-  background-color: $darkGrey;
   box-sizing: border-box;
   font-size: 16px;
   padding: 12px;
