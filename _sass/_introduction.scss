@@ -4,18 +4,17 @@
   position: relative;
 
   &:before {
+    background: linear-gradient(top, rgba($bgColor2, 0.0), rgba($bgColor2, 1.0));
+    bottom: 0;
     content: '';
     display: block;
-    left: 0;
-    right: 0;
     height: 20%;
-    bottom: 0;
+    left: 0;
     position: absolute;
-    background: linear-gradient(top, rgba($bgColor2, 0.0), rgba($bgColor2, 1.0));
+    right: 0;
     z-index: 1;
   }
   header {
-
     left: 50%;
     position: absolute;
     top: 50%;
