@@ -20,6 +20,7 @@ $(function () {
       $window = $(window),
       $main = $('main'),
       $introduction = $main.find('.introduction'),
+      $iconMore = $introduction.find('.icon-more'),
       $canvas = $main.find('#stage'),
 
       canvas = document.getElementById('stage'),
@@ -41,7 +42,9 @@ $(function () {
       animloop();
     }
 
-    $window.on('resize', _.throttle(resize, 500));
+    $window
+      .on('resize', _.throttle(resize, 500))
+      .on('scroll', _.throttle(scroll, 250));
   }
 
   function animloop(){
@@ -70,6 +73,14 @@ $(function () {
 
     $introduction.width(stageWidth);
     $introduction.height(stageHeight);
+  }
+
+  function scroll () {
+    if ($window.scrollTop() > 50) {
+      $iconMore.addClass('hidden');
+    } else {
+      $iconMore.removeClass('hidden');
+    }
   }
 
   function render () {
