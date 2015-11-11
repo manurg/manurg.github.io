@@ -1,6 +1,4 @@
 .projects {
-  background: $white;
-  color: $black;
   margin: auto;
   max-width: 980px;
   padding: 2em;
@@ -13,9 +11,9 @@
   .project {
 
     & + .project {
-      border-top: 1px solid $lightGrey;
-      margin-top: 2em;
-      padding-top: 2em;
+      border-top: 1px solid rgba($lightGrey, 0.3);
+      margin-top: 3.5em;
+      padding-top: 3.5em;
     }
 
     h1 {
