@@ -23,11 +23,13 @@ $(function () {
       $iconMore = $introduction.find('.icon-more'),
       $canvas = $main.find('#stage'),
 
+      md = new MobileDetect(window.navigator.userAgent),
+      isMobile = md.mobile(),
       canvas = document.getElementById('stage'),
       ctx,
       stageWidth,
       stageHeight,
-      particles = [];
+      particles;
 
   init();
 
@@ -35,11 +37,17 @@ $(function () {
 
   function init () {
     resize();
-    initParticles();
 
     if(canvas && canvas.getContext) {
       ctx = canvas.getContext('2d');
-      animloop();
+
+      initParticles();
+
+      if (!md.mobile()) {
+        animloop();
+      } else {
+        render();
+      }
     }
 
     $window
@@ -53,9 +61,12 @@ $(function () {
   }
 
   function initParticles () {
-    var i = 0;
+    var i = 0,
+        numParticles = isMobile ? 50 : NUM_PARTICLES;
 
-    for (i; i < NUM_PARTICLES; i++) {
+    particles = [];
+
+    for (i; i < numParticles; i++) {
       particles.push({
         x: Math.random() * stageWidth,
         y: Math.random() * stageHeight,
@@ -73,6 +84,11 @@ $(function () {
 
     $introduction.width(stageWidth);
     $introduction.height(stageHeight);
+
+    if (isMobile && ctx) {
+      initParticles();
+      render();
+    }
   }
 
   function scroll () {
@@ -124,7 +140,7 @@ $(function () {
 
   // helper
   function getDistance (x1, y1, x2, y2) {
-    return Math.sqrt( (x2-=x1)*x2 + (y2-=y1)*y2 );
+    return Math.sqrt((x2 -= x1) * x2 + (y2 -= y1) * y2);
   }
 
 });
