@@ -1,6 +1,6 @@
 // rAF polyfill
 window.requestAnimFrame = (function(){
-  return  window.requestAnimationFrame       ||
+  return  window.requestAnimationFrame   ||
       window.webkitRequestAnimationFrame ||
       window.mozRequestAnimationFrame    ||
       function( callback ){
@@ -36,6 +36,13 @@ $(function () {
   //////
 
   function init () {
+
+    if (isMobile) {
+      $.getScript('dist/lib/fastclick.js', function () {
+        FastClick.attach(document.body);
+      });
+    }
+
     resize();
 
     if(canvas && canvas.getContext) {

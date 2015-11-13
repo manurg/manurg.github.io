@@ -39,6 +39,14 @@ ul {
   }
 }
 
+@media (max-width: 780px) {
+  .taglist {
+    li {
+      font-size: 9px;
+    }
+  }
+}
+
 .button {
   display: inline-block;
   margin: 0.5em;

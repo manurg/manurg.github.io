@@ -67,6 +67,20 @@
   }
 }
 
+@media (max-width: 780px) {
+  .introduction {
+    header {
+      font-size: 80%;
+      width: 100%;
+      text-align: center;
+
+      hgroup {
+        display: block;
+      }
+    }
+  }
+}
+
 #stage {
   left: 0;
   position: absolute;

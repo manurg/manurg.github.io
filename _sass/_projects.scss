@@ -1,4 +1,6 @@
 .projects {
+  background: $white;
+  color: $black;
   margin: auto;
   max-width: 980px;
   padding: 2em;
@@ -11,7 +13,7 @@
   .project {
 
     & + .project {
-      border-top: 1px solid rgba($lightGrey, 0.3);
+      border-top: 1px solid rgba($mediumGrey, 0.3);
       margin-top: 3.5em;
       padding-top: 3.5em;
     }
@@ -54,7 +56,6 @@
         color: $white;
       }
     }
-
   }
 }
 
@@ -66,13 +67,14 @@
       line-height: 1.6em;
 
       h1 {
+        line-height: 1.25em;
         margin: 0.5em 0;
       }
 
       img,
       .description {
-        width: 100%;
         padding-left: 0;
+        width: 100%;
       }
     }
   }
