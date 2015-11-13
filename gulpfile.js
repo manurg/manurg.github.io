@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var concat = require('gulp-concat');
@@ -43,12 +44,20 @@ gulp.task('openUrl', function () {
 gulp.task('sass', function () {
   gulp.src('sass/style.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest(DIST_DIR));
 });
 
 gulp.task('sass:deploy', function () {
   gulp.src('sass/style.scss')
     .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(gulp.dest(DIST_DIR));
 });
 
