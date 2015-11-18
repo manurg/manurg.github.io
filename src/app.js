@@ -91,11 +91,6 @@ $(function () {
 
     $introduction.width(stageWidth);
     $introduction.height(stageHeight);
-
-    if (isMobile && ctx) {
-      initParticles();
-      render();
-    }
   }
 
   function scroll () {

@@ -90,5 +90,15 @@ footer {
   text-align: center;
   text-transform: uppercase;
   width: 100%;
+
+  a {
+    display: inline-block;
+  }
+
+  .imprint,
+  .footnote {
+    color: $mediumGrey;
+    font-size: 0.7em;
+  }
 }
 
