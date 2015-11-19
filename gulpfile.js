@@ -9,6 +9,8 @@ var concat = require('gulp-concat');
 var stylish = require('jshint-stylish');
 var plumber = require('gulp-plumber');
 var open = require('gulp-open');
+var runSequence = require('run-sequence');
+var del = require('del');
 
 
 // ----
@@ -24,8 +26,8 @@ var libs = [
 
 
 // main tasks
-gulp.task('default', ['scripts', 'scripts:libs', 'openUrl', 'watch']);
-gulp.task('deploy', ['scripts:libs', 'scripts:deploy', 'sass:deploy']);
+gulp.task('default', ['app:dev', 'libs', 'openUrl', 'watch']);
+gulp.task('deploy', function () { runSequence('libs', 'app:deploy', 'scripts:concat', 'sass:deploy', 'del:dev'); });
 
 
 // sub tasks
@@ -37,6 +39,15 @@ gulp.task('watch', function () {
 gulp.task('openUrl', function () {
   return gulp.src('')
     .pipe(open({uri: 'http://localhost:4000'}));
+});
+
+
+// deletes
+gulp.task('del:dev', function () {
+  return del([
+    DIST_DIR + 'libs.js',
+    DIST_DIR + 'app.js'
+  ]);
 });
 
 
@@ -63,7 +74,7 @@ gulp.task('sass:deploy', function () {
 
 
 // scripts
-gulp.task('scripts', function () {
+gulp.task('app:dev', function () {
   return gulp.src('src/**/*.js')
     .pipe(plumber())
     .pipe(jshint())
@@ -71,17 +82,23 @@ gulp.task('scripts', function () {
     .pipe(gulp.dest(DIST_DIR));
 });
 
-gulp.task('scripts:libs', function () {
+gulp.task('app:deploy', function () {
+  return gulp.src('src/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter(stylish))
+    .pipe(uglify())
+    .pipe(gulp.dest(DIST_DIR));
+});
+
+gulp.task('libs', function () {
   return gulp.src(libs)
     .pipe(concat('libs.js'))
     .pipe(uglify())
     .pipe(gulp.dest(DIST_DIR));
 });
 
-gulp.task('scripts:deploy', function () {
-  return gulp.src('src/**/*.js')
-    .pipe(jshint())
-    .pipe(jshint.reporter(stylish))
-    .pipe(uglify())
+gulp.task('scripts:concat', function () {
+  return gulp.src([DIST_DIR + '/libs.js', DIST_DIR + '/app.js'])
+    .pipe(concat('app.min.js'))
     .pipe(gulp.dest(DIST_DIR));
 });

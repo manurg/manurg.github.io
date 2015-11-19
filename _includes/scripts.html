@@ -1,2 +1,7 @@
-<script src="/dist/libs.js"></script>
-<script src="/dist/app.js"></script>
+{% if site.GH_ENV === 'gh_pages' %}
+  <script async src="/dist/app.min.js"></script>
+{% else %}
+  <script src="/dist/libs.js"></script>
+  <script src="/dist/app.js"></script>
+{% endif %}
+
