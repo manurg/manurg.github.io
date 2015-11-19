@@ -26,7 +26,7 @@ var libs = [
 
 
 // main tasks
-gulp.task('default', ['app:dev', 'libs', 'openUrl', 'watch']);
+gulp.task('default', function () { runSequence('app:dev', 'libs', 'openUrl', 'watch'); });
 gulp.task('deploy', function () { runSequence('libs', 'app:deploy', 'scripts:concat', 'sass:deploy', 'del:dev'); });
 
 

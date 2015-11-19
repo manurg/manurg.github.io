@@ -3,3 +3,5 @@
 /_site
 /lib
 /node_modules
+/dist/app.js
+/dist/libs.js
