@@ -1,8 +1,9 @@
 <script if="loadcss">
+  (function() {var wf = document.createElement('script');wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +'://ajax.googleapis.com/ajax/libs/webfont/1.5.6/webfont.js';wf.type = 'text/javascript';wf.async = 'true';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf, s);})();
   function loadCSS(e,t,n,o){"use strict";function r(){for(var e,t=0;t<l.length;t++)l[t].href&&l[t].href.indexOf(i.href)>-1&&(e=!0);e?i.media=n||"all":setTimeout(r)}var i=window.document.createElement("link"),d=t||window.document.getElementsByTagName("script")[0],l=window.document.styleSheets;return i.rel="stylesheet",i.href=e,i.media="only x",o&&(i.onload=o),d.parentNode.insertBefore(i,d),r(),i}
   loadCSS('dist/style.css', document.getElementById('loadcss') );
+  WebFontConfig = {google: {families: [ 'Abel::latin' ]}};
 </script>
 <noscript>
   <link href="/dist/style.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 </noscript>
