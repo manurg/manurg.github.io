@@ -10,8 +10,14 @@
     / <a href="javascript:window.location.href='mailto:'+['post','dermanu.de'].join('@')">post AT dermanu PUNKT de</a>
   </section>
   <section class="footnote">
-    <p>Diese Website wurde mit <a href="http://jekyllrb.com/" target="_blank">jekyll</a> und <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> erstellt.
-    <br>&copy; 2015 Manuel Rodriguez</p>
+    <p>
+      Diese Website wurde mit <a href="http://jekyllrb.com/" target="_blank">jekyll</a> und <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> erstellt.
+      <br>&copy; 2015 Manuel Rodriguez
+      {% if site.GH_ENV == 'gh_pages' %}
+        |
+      {% endif %}
+    </p>
+
 
   </section>
 </footer>
