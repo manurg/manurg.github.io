@@ -43,12 +43,14 @@ $(function () {
       });
     }
 
-    resize();
+    updateDimensions();
+    updateIntroduction();
 
     if(canvas && canvas.getContext) {
       ctx = canvas.getContext('2d');
 
       initParticles();
+      updateCanvas();
 
       if (!md.mobile()) {
         animloop();
@@ -84,11 +86,25 @@ $(function () {
   }
 
   function resize () {
+    updateDimensions();
+    updateCanvas();
+    updateIntroduction();
+
+    if (md.mobile()) {
+      render();
+    }
+  }
+
+  function updateDimensions () {
     stageWidth = $window.width();
     stageHeight = $window.height();
+  }
 
+  function updateCanvas () {
     $canvas.attr('width', stageWidth).attr('height', stageHeight);
+  }
 
+  function updateIntroduction () {
     $introduction.width(stageWidth);
     $introduction.height(stageHeight);
   }
