@@ -32,7 +32,7 @@ gulp.task('deploy', function () { runSequence('libs', 'app:deploy', 'scripts:con
 
 // sub tasks
 gulp.task('watch', function () {
-  gulp.watch('src/*.js', ['scripts']);
+  gulp.watch('src/*.js', ['app:dev']);
   gulp.watch('sass/**/*.scss', ['sass']);
 });
 
