@@ -20,7 +20,8 @@ $(function () {
       $window = $(window),
       $main = $('main'),
       $introduction = $main.find('.introduction'),
-      $iconMore = $introduction.find('.icon-more'),
+      $header = $introduction.find('header'),
+      $more = $introduction.find('.more'),
       $canvas = $main.find('#stage'),
 
       md = new MobileDetect(window.navigator.userAgent),
@@ -59,9 +60,15 @@ $(function () {
       }
     }
 
+    $header.on('click', onHeaderClick);
+
     $window
       .on('resize', _.throttle(resize, 500))
       .on('scroll', _.throttle(scroll, 250));
+  }
+
+  function onHeaderClick() {
+    $('html, body').animate({scrollTop: $introduction.height()}, 500);
   }
 
   function animloop(){
@@ -111,9 +118,9 @@ $(function () {
 
   function scroll () {
     if ($window.scrollTop() > 50) {
-      $iconMore.addClass('hidden');
+      $more.addClass('hidden');
     } else {
-      $iconMore.removeClass('hidden');
+      $more.removeClass('hidden');
     }
   }
 
