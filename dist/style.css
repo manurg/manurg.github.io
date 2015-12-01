@@ -1273,13 +1273,15 @@ footer {
       font-size: 72px;
       line-height: 36px; }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .introduction header {
     font-size: 80%;
     width: 100%;
     text-align: center; }
     .introduction header hgroup {
-      display: block; } }
+      display: block; }
+  .introduction .avatar {
+    margin-right: 0; } }
 
 #stage {
   left: 0;

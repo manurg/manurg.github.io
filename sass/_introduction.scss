@@ -70,7 +70,7 @@
 
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .introduction {
     header {
       font-size: 80%;
@@ -80,6 +80,10 @@
       hgroup {
         display: block;
       }
+    }
+
+    .avatar {
+      margin-right: 0;
     }
   }
 }
