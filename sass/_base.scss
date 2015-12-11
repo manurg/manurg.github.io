@@ -28,6 +28,12 @@ ul {
   }
 }
 
+.content-container {
+  margin: auto;
+  max-width: 980px;
+  padding: 2em;
+}
+
 .taglist {
   li {
     border: 1px solid $white;

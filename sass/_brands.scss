@@ -1,0 +1,17 @@
+.brands {
+  background: $darkGrey2;
+  color: $mediumGrey;
+
+  li {
+    &:after {
+      content: " / ";
+      margin: 0 5px;
+    }
+
+    &:last-child {
+      &:after {
+        content: ""
+      }
+    }
+  }
+}
