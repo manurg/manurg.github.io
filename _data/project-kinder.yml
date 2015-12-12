@@ -1,0 +1,21 @@
+image:
+  src: "projects/kinder.jpg"
+  src2x: "projects/kinder@2x.jpg"
+  alt: "Kinderüberraschung"
+  title: "Kinderüberraschung"
+
+headline: "Kinderüberraschung"
+description: "Aufwendige Websiteinszenierung von Kinderüberraschung, die einen in die virtuelle 3D-Welt des Ü-Ei-Planeten einlädt, inklusive Kamerafahrten in die einzelnen Unterseiten."
+tasks: [
+  "Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop, Tablet und Mobile.",
+  "Optimierung und Generierung der Sprites / Kamerafahrten.",
+  "Implementierung eines intelligenten Assetloaders für Desktop / Tablet / Mobile."
+]
+tags: ["html5", "css3", "sass", "compass", "javascript", "jquery", "hasher", "crossroads.js", "grunt"]
+
+
+
+
+
+
+

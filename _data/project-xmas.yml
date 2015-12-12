@@ -1,0 +1,12 @@
+image:
+  src: "projects/xmas.jpg"
+  src2x: "projects/xmas@2x.jpg"
+  alt: "Salon91 - Weihnachtsspecial"
+  title: "Salon91 - Weihnachtsspecial"
+
+headline: "Salon91 - Weihnachtsspecial"
+description: "Vor Weihnachten lud Salon91 zum virtuellen Vorflöten ein. Dazu benötigte man zusätzlich noch ein Smartphone und eine iOS App, um sich mit der Website zu verbinden. Sobald die Verbindung hergestellt war, konnte man durch Pusten in das Mikrofon des Handys die Töne des ausgewählten Weihnachtsliedes ertönen lassen."
+tasks: [
+  "Entwicklung der iOS App (hybrid) mit Ionic (AngularJS + Apache Cordova)."
+]
+tags: ["html5", "css3", "sass", "javascript", "ionic", "apache cordova", "angularjs", "firebase"]

@@ -1,0 +1,20 @@
+image:
+  src: "projects/nutella.jpg"
+  src2x: "projects/nutella@2x.jpg"
+  alt: "nutella - Schneemannglas - Webspecial"
+  title: "nutella - Schneemannglas - Webspecial"
+
+headline: "nutella - Schneemannglas"
+description: "Zum Release des Nutella-Schneemannglas wurde ein Webspecial / Gewinnspiel geschaltet, auf dem User ihren eigenen Schneemann gestalten konnten. Selbst das eigene Gesicht konnte über Festplatte / Kamera / Facebook-Fotos in den Schneemann integriert werden. Der so entstandene Schneemann konnte nach der Fertigstellung auf allen gängigen Social-Media Plattformen geteilt werden."
+tasks: [
+  "Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop",
+  "Entwicklung eines ruckelfreien Parallax-Effektes beim Navigieren durch die Mauerstücke / in den Himmel, welcher auch auf einem iPad flüssig läuft."
+]
+tags: ["html5", "css3", "sass", "compass", "javascript", "facebook api", "jquery", "ember.js", "handlebars"]
+
+
+
+
+
+
+

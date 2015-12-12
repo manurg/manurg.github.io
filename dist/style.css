@@ -1559,7 +1559,7 @@ footer {
     margin: 0 0 0.5em 0; }
   .history li {
     font-size: 0.9em;
-    margin-right: 8px; }
+    margin-right: 12px; }
 
 @media (max-width: 780px) {
   .history > section {

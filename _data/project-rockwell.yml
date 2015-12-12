@@ -1,0 +1,21 @@
+image:
+  src: "projects/67rockwell.jpg"
+  src2x: "projects/67rockwell@2x.jpg"
+  alt: "67rockwell"
+  title: "67rockwell"
+
+headline: "67rockwell"
+tasks: [
+  "Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop und Tablet.",
+  "Erstellung von durchs Backend pflegbare, modulare Teaser, die in verschiedenen Größen / Layouts / Farben einsetzbar sind.",
+  "Entwicklung eines Sortier- / Anordnungsalgorithmus bei Klick auf Teaser, um die durch den Content verdrängten Teaser umliegend zu verteilen.",
+  "Entwicklung eines cross-browser Blur-Effekts."
+]
+tags: ["html5", "css3", "sass", "compass", "javascript", "jquery"]
+
+
+
+
+
+
+

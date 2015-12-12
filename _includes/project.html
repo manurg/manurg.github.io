@@ -1,0 +1,30 @@
+<section class="project cf">
+  <img src="{{ include.project.image.src }}"
+       srcset="{{ include.project.image.src }} 1x, {{ include.project.image.src2x }} 2x"
+       alt="{{ include.project.image.alt }}" title="{{ include.project.image.title }}"/>
+
+  <div class="description">
+    <h1>{{ include.project.headline }}</h1>
+
+    {% if include.project.subline %}
+      <h2>{{ include.project.subline }}</h2>
+    {% endif %}
+
+    {% if include.project.description %}
+      <p>{{ include.project.description }}</p>
+    {% endif %}
+
+    <h2>Meine Aufgabe:</h2>
+    <p>
+    {% for task in include.project.tasks %}
+      {{ task }}
+    {% endfor %}
+    </p>
+
+    <code>
+      <ul class="taglist">
+        {% for tag in include.project.tags %}<li>{{ tag }}</li>{% endfor %}
+      </ul>
+    </code>
+  </div>
+</section>

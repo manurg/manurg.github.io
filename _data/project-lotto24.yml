@@ -1,0 +1,20 @@
+image:
+  src: "projects/lotto24.jpg"
+  src2x: "projects/lotto24@2x.jpg"
+  alt: "lotto24"
+  title: "lotto24"
+
+headline: "Lotto24"
+subline: "Der längste Lottoschein der Welt"
+description: "Lotto24 bot Facebook-Usern die Möglichkeit, ein Kreuz auf einem virtuellen Lottoschein zu setzen. Das Setzen der Kreuze wurde in Echtzeit umgesetzt, d.h. man konnte live miterleben, wenn ein anderer User auf dem selben Feld ein Kreuz setzte. Unter allen Teilnehmern wurde ein Gewinner ausgelost, der den so entstandenen “Längsten Lottoschein der Welt” in echt einmal spielen durfte."
+tasks: [
+  "Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop und Mobile mit AngularJS."
+]
+tags: ["html5", "css3", "sass", "compass", "javascript", "angularjs", "firebase", "facebook api", "grunt"]
+
+
+
+
+
+
+

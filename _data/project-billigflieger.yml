@@ -1,0 +1,18 @@
+image:
+  src: "projects/billigflieger.jpg"
+  src2x: "projects/billigflieger@2x.jpg"
+  alt: "billigflieger.de"
+  title: "billigflieger.de"
+
+headline: "billigflieger.de"
+subline: "Metasuchmaschine für Flüge"
+description: "Im Auftrag der bookandsmile GmbH durfte ich Teil des kompletten Umbaus von billigflieger.de sein. Die Seite hat sich einem kompletten technischen Relaunch unterzogen, wobei Backend und Frontend neu entwickelt wurden."
+tasks: [
+  "Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop und Mobile mit AngularJS."
+]
+tags: ["html5", "css3", "stylus", "node.js", "express", "angularjs", "karma", "jasmine", "gulp", "ejs", "scrum"]
+
+
+
+
+

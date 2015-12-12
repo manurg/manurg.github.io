@@ -1,0 +1,21 @@
+image:
+  src: "projects/361grad.jpg"
+  src2x: "projects/361grad@2x.jpg"
+  alt: "ŠKODA - Die Mauer-weg-Wochen - Webspecial"
+  title: "ŠKODA - Die Mauer-weg-Wochen - Webspecial"
+
+headline: "361° Respekt - Youtube Gadget"
+description: "Im Auftrag von Google wurde ein Youtube-Gadget-Gewinnspiel erstellt. In verschiedenen Gewinnspielphasen konnten die Teilnehmer auf erstellte Youtube Videos antworten und somit am Gewinnspiel teilnehmen."
+tasks: [
+  "Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop.",
+  "Einfache Kompilierung der einzelnen Phasen des Gewinnspiels mit Grunt.",
+  "Automatische Generierung/Optimierung von Image-Sprites mit Compass (Sass)"
+]
+tags: ["html5", "css3", "sass", "compass", "youtube api", "javascript", "jquery", "ember.js", "handlebars", "grunt"]
+
+
+
+
+
+
+

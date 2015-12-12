@@ -1,0 +1,21 @@
+image:
+  src: "projects/skoda25.jpg"
+  src2x: "projects/skoda25@2x.jpg"
+  alt: "ŠKODA - Die Mauer-weg-Wochen - Webspecial"
+  title: "ŠKODA - Die Mauer-weg-Wochen - Webspecial"
+
+headline: "ŠKODA - Webspecial"
+subline: "Die Mauer-weg-Wochen"
+description: "Auf skoda25.de konnten User durch Mauerstücke navigieren und Highlights der Jahre 1989 - 2014 erfahren. Jedes Mauerstück enthielt zusätzliche Infos, die nach einem Klick und einer Kamerafahrt in den “Himmel” ersichtlich waren."
+tasks: [
+  "Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop und Tablet.",
+  "Entwicklung eines ruckelfreien Parallax-Effektes beim Navigieren durch die Mauerstücke / in den Himmel, welcher auch auf einem iPad flüssig läuft."
+]
+tags: ["html5", "css3", "sass", "compass", "javascript", "jquery", "grunt"]
+
+
+
+
+
+
+

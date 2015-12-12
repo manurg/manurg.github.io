@@ -1,0 +1,18 @@
+image:
+  src: "projects/dolomiten.jpg"
+  src2x: "projects/dolomiten@2x.jpg"
+  alt: "Das Rätsel der Dolomiten"
+  title: "Das Rätsel der Dolomiten"
+
+headline: "Das Rätsel der Dolomiten"
+description: "In mehreren Spieletappen können die Besucher die Urlaubswelt der Dolomiten anhand großer Bilder und emotionaler Videos interaktiv entdecken. Über eine angepasste Google Maps Karte wird der Besucher durch die virtuelle Wandertour geführt, muss Fragen beantworten und kann sich zum Ende der letzten Etappe in das Gipfelbuch eintragen und an einem Gewinnspiel teilnehmen."
+tasks: [
+  "Umsetzung der Gestaltung und Frontend-Funktionalitäten für Desktop.",
+  "Entwicklung der interaktiven Hauptnavigation mit Canvas + Flash-Polyfill."
+]
+tags: ["html5", "css3", "javascript", "canvas", "svg", "jquery"]
+
+
+
+
+
