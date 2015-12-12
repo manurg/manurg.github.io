@@ -1,0 +1,14 @@
+  <section class="history content-container cf">
+    <section class="clients pr-m">
+      <h2>Arbeit- / Auftraggeber</h2>
+      <ul>
+        {% for client in site.data.clients %}<li>{{ client }}</li>{% endfor %}
+      </ul>
+    </section>
+    <section class="brands">
+      <h2>Marken</h2>
+      <ul>
+        {% for brand in site.data.brands %}<li>{{ brand }}</li>{% endfor %}
+      </ul>
+    </section>
+  </section>

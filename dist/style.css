@@ -1547,60 +1547,27 @@ footer {
       padding-left: 0;
       width: 100%; } }
 
-.projects {
-  background: #fcfcfc;
-  color: #262121;
-  text-align: left; }
-  .projects > h1 {
-    margin: 0 0 1em 0; }
-  .projects .project + .project {
-    border-top: 1px solid rgba(221, 221, 221, 0.3);
-    margin-top: 3.5em;
-    padding-top: 3.5em; }
-  .projects .project h1 {
-    margin: -0.25em 0 0.5em 0; }
-  .projects .project code {
-    font-size: 12px; }
-  .projects .project p code {
-    background: #eeeeee;
-    border-radius: 2px;
-    border: 1px solid #dddddd;
-    color: #262121;
-    padding: 0.2em; }
-  .projects .project img {
-    box-sizing: border-box;
-    display: block;
-    float: left;
-    width: 50%; }
-  .projects .project .description {
+.history {
+  background: #1D1A1A;
+  color: #dddddd; }
+  .history > section {
     box-sizing: border-box;
     float: left;
-    padding-left: 2em;
     width: 50%; }
-  .projects .project .taglist li {
-    background: #262121;
-    color: #fcfcfc; }
+  .history h2 {
+    font-size: 1.1em;
+    margin: 0 0 0.5em 0; }
+  .history li {
+    font-size: 0.9em;
+    margin-right: 8px; }
 
 @media (max-width: 780px) {
-  .projects .project {
-    font-size: 80%;
-    line-height: 1.6em; }
-    .projects .project h1 {
-      line-height: 1.25em;
-      margin: 0.5em 0; }
-    .projects .project img,
-    .projects .project .description {
-      padding-left: 0;
-      width: 100%; } }
-
-.brands {
-  background: #312F2F;
-  color: #dddddd; }
-  .brands li:after {
-    content: " / ";
-    margin: 0 5px; }
-  .brands li:last-child:after {
-    content: ""; }
+  .history > section {
+    width: 100%; }
+  .history .clients {
+    padding-right: 0 !important; }
+  .history .brands h2 {
+    margin-top: 1em; } }
 
 .imprint {
   padding: 2em; }
