@@ -14,12 +14,15 @@
       <p>{{ include.project.description }}</p>
     {% endif %}
 
-    <h2>Meine Aufgabe:</h2>
-    <p>
-    {% for task in include.project.tasks %}
-      {{ task }}
-    {% endfor %}
-    </p>
+    {% if include.project.tasks %}
+      <h2>Meine Aufgabe:</h2>
+      <p>
+      {% for task in include.project.tasks %}
+        {{ task }}
+      {% endfor %}
+      </p>
+    {% endif %}
+
 
     <code>
       <ul class="taglist">

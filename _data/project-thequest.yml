@@ -1,0 +1,10 @@
+image:
+  gif: "projects/thequest.gif"
+  src: "projects/thequest.jpg"
+  src2x: "projects/thequest@2x.jpg"
+  alt: "Café Royal - The Quest"
+  title: "Café Royal - The Quest"
+
+headline: "Café Royal - The Quest"
+description: "Im Auftrag der SOLIDDD GmbH durfte ich ein spannendes Multi-Device-Spiel entwickeln, in dem der User auf virtuelle Kaffekapsel-Jagd geschickt wurde, um einen Bösewicht ausfindig zu machen. Die Herausforderung hierbei war, trotz großer Karte ein flüssiges Spielerlebnis auf den gängigsten Geräten zu schaffen."
+tags: ["pixijs", "es6", "babel", "rollupjs", "html5", "css3", "sass", "gulp", "mobile", "desktop"]
