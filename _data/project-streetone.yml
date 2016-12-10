@@ -1,0 +1,10 @@
+image:
+  src: "projects/streetone.jpg"
+  src2x: "projects/streetone@2x.jpg"
+  alt: "Street One mobile Shop"
+  title: "Street One mobile Shop"
+
+headline: "Street One"
+subline: "AngularJS mobile Shop"
+description: "Im Auftrag der CBR eCommerce GmbH durfte ich an dem Aufbau des neuen mobilen Shops mitwirken. Besonders spannend war hierbei, dass alle alten URLs weiterhin unterstützt werden sollten. Zusätzlich sollten keine Nachteile für SEO entstehen."
+tags: ["angularjs", "javascript", "html5", "css3", "sass", "gulp", "mobile", "ecommerce", "shop"]
