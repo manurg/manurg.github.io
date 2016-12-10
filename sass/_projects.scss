@@ -34,10 +34,7 @@
     }
 
     img {
-      box-sizing: border-box;
       display: block;
-      float: left;
-      width: 50%;
     }
 
     .description {
@@ -52,6 +49,36 @@
         background: $black;
         color: $white;
       }
+    }
+  }
+
+  .image-container {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+  }
+
+  .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    overflow: hidden;
+    background: $black;
+    text-transform: uppercase;
+    color: $white;
+    border-radius: 35px;
+    opacity: 0.9;
+    border: 5px solid $white;
+    transition: width 0.1s, height 0.1s;
+
+    &:hover {
+      width: 70px;
+      height: 70px;
     }
   }
 }

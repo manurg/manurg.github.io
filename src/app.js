@@ -23,6 +23,7 @@ $(function () {
       $header = $introduction.find('header'),
       $more = $introduction.find('.more'),
       $canvas = $main.find('#stage'),
+      $playButtons = $('.image-container .play'),
 
       md = new MobileDetect(window.navigator.userAgent),
       isMobile = md.mobile(),
@@ -62,6 +63,8 @@ $(function () {
 
     $header.on('click', onHeaderClick);
 
+    $playButtons.on('click', loadAndPlayGIF);
+
     $window
       .on('resize', _.throttle(resize, 500))
       .on('scroll', _.throttle(scroll, 250));
@@ -69,6 +72,25 @@ $(function () {
 
   function onHeaderClick() {
     $('html, body').animate({scrollTop: $introduction.height()}, 500);
+  }
+
+  function loadAndPlayGIF() {
+    var $currentBtn = $(this),
+        $currentContainer = $currentBtn.parent(),
+        gifPath = $currentBtn.attr('gif');
+
+    if ($currentBtn.html() === 'Lade') {
+      return;
+    }
+
+    $currentBtn.html('Lade');
+
+    $.ajax(gifPath, {
+      complete: function () {
+        $currentContainer.empty();
+        $currentContainer.html('<img src="' + gifPath + '"/>');
+      }
+    });
   }
 
   function animloop(){

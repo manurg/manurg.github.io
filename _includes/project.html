@@ -1,7 +1,12 @@
 <section class="project cf">
-  <img src="{{ include.project.image.src }}"
-       srcset="{{ include.project.image.src }} 1x, {{ include.project.image.src2x }} 2x"
-       alt="{{ include.project.image.alt }}" title="{{ include.project.image.title }}"/>
+  <div class="image-container">
+    <img src="{{ include.project.image.src }}"
+         srcset="{{ include.project.image.src }} 1x, {{ include.project.image.src2x }} 2x"
+         alt="{{ include.project.image.alt }}" title="{{ include.project.image.title }}"/>
+    {% if include.project.image.gif %}
+      <button class="play" type="button" gif="{{ include.project.image.gif }}">play</button>
+    {% endif %}
+  </div>
 
   <div class="description">
     <h1>{{ include.project.headline }}</h1>
