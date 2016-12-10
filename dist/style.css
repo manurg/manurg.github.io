@@ -1522,7 +1522,8 @@ footer {
     color: #262121;
     padding: 0.2em; }
   .projects .project img {
-    display: block; }
+    display: block;
+    width: 100%; }
   .projects .project .description {
     box-sizing: border-box;
     float: left;
@@ -1564,7 +1565,7 @@ footer {
     .projects .project h1 {
       line-height: 1.25em;
       margin: 0.5em 0; }
-    .projects .project img,
+    .projects .project .image-container,
     .projects .project .description {
       padding-left: 0;
       width: 100%; } }
