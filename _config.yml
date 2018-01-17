@@ -1,4 +1,4 @@
 highlighter: rouge
 exclude: ['src', 'sass', 'node_modules', 'lib']
-gems:
+plugins:
   - octopress-autoprefixer

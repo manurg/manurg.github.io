@@ -1,0 +1,10 @@
+image:
+  src: "projects/otto.jpg"
+  src2x: "projects/otto@2x.jpg"
+  alt: "OTTO"
+  title: "OTTO"
+
+headline: "OTTO"
+subline: "gefunden auf otto.de"
+description: "Im Auftrag der Otto (GmbH & Co KG) durfte ich in einem interdisziplinären Team den Auftritt der Artikeldetailseite / Kundenbewertungsseite und alle dazugehörigen internen Microservices erweitern und verbessern."
+tags: ["vanilla js", "es6", "jasmine", "karma", "node.js", "mocha", "css", "html5", "sass", "java (spring)", "selenium", "cucumber", "jenkins", "continuous deployment / integration", "scrum", "kanban", "pairing", "kibana", "splunk"]
